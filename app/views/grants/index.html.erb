@@ -1,0 +1,16 @@
+<table>
+  <tr>
+    <th>Project Title</th>
+    <th>Max Funding</th>
+    <th>Date of Decision</th>
+    <th>Instition</th>
+  </tr>
+  <% @grants.each do |grant| %>
+    <tr>
+      <td><%= grant.project_title %></td>
+      <td><%= grant.max_CFI %></td>
+      <td><%= grant.final_decision %></td>
+      <td><%= grant.institution %></td>
+    </tr>
+  <% end %>
+</table>
